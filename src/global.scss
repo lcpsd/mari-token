@@ -1,0 +1,72 @@
+:root {
+    --background: #ebebeb;
+    --accua-green-100: rgb(0, 255, 179);
+    --yellow-100: rgb(255, 183, 0);
+    --gray-blue-800: rgb(21, 28, 44);
+    --orange-100: rgb(255, 132, 0);
+    --green-500: rgb(0, 155, 65);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Custom Scroll Bar
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:  var(--medium-purple);
+}
+
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%; //15px
+    }
+    @media (max-width: 720px) {
+        font-size: 87.5%; //14px
+    }
+
+}
+
+body {
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+[disable] {
+    opacity: 0.6; //
+    cursor: not-allowed;
+}
