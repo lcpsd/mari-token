@@ -16,27 +16,42 @@
         gap: 2rem;
 
         h1{
-            color: var(--yellow-100);
+            background: linear-gradient(var(--yellow-100), var(--orange-100));
+            color: transparent;
             text-align: center;
             font-size: 3rem;
+            background-clip: text;
         }
 
         p{
             text-align: center;
             font-size: 1.5rem;
+            max-width: 25rem;
         }
 
         div{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 0.5rem;
 
             h3{
                 font-size: 1rem;
                 font-weight: lighter;
-                color: var(--yellow-100)
+                color: var(--yellow-100);
+                font-weight: bold;
+                background: var(--orange-100);
+                height: 5rem;
+                border-radius: 0 0.5rem 0.5rem 0;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                filter: brightness(1.2);
+                font-size: 1.5rem;
+
+                &:hover{
+                    filter: brightness(1.1)
+                }
             }
 
             button{
@@ -44,7 +59,7 @@
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: center;
-                border-radius: 0.5rem;
+                border-radius: 0.5rem 0 0 0.5rem;
                 height: 5rem;
                 width: 20rem;
                 font-size: 1.5rem;

@@ -12,12 +12,13 @@ export function HeaderSection(){
                         Mari Token is a Frictionless, Yield Generating, Community Owned Token.
                     </p>
 
-                    <div>
-                        <button></button>
-                        <h3>BUY NOW</h3>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <button></button>
+                                <h3>BUY NOW</h3>
+                        </div>
+                    </a>
                 </div>
-            
         </section>
     )
 }
