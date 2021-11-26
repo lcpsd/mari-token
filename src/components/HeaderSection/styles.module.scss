@@ -10,65 +10,89 @@
         max-width: 1120px;
         padding: 1rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 5rem;
 
-        h1{
-            background: linear-gradient(var(--yellow-100), var(--orange-100));
-            color: transparent;
-            text-align: center;
-            font-size: 3rem;
-            background-clip: text;
-        }
-
-        p{
-            text-align: center;
-            font-size: 1.5rem;
-            max-width: 25rem;
-        }
-
-        div{
+        .leftSection{
             display: flex;
             justify-content: center;
             align-items: center;
-
-            h3{
-                font-size: 1rem;
-                font-weight: lighter;
-                color: var(--yellow-100);
-                font-weight: bold;
-                background: var(--orange-100);
-                height: 5rem;
-                border-radius: 0 0.5rem 0.5rem 0;
-                padding: 1rem;
+            flex-direction: column;
+            gap: 2rem;
+            h1{
+                background: linear-gradient(var(--yellow-100), var(--orange-100));
+                color: transparent;
+                text-align: center;
+                font-size: 3rem;
+                background-clip: text;
+            }
+    
+            p{
+                text-align: center;
+                font-size: 1.5rem;
+                max-width: 25rem;
+            }
+    
+            div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                filter: brightness(1.2);
-                font-size: 1.5rem;
-
-                &:hover{
-                    filter: brightness(1.1)
+    
+                h3{
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    color: var(--yellow-100);
+                    font-weight: bold;
+                    background: var(--orange-100);
+                    height: 5rem;
+                    border-radius: 0 0.5rem 0.5rem 0;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    filter: brightness(1.2);
+                    font-size: 1.5rem;
+    
+                    &:hover{
+                        filter: brightness(1.1)
+                    }
+                }
+    
+                button{
+                    background: url('../../assets/pancake-logo.jpg');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                    border-radius: 0.5rem 0 0 0.5rem;
+                    height: 5rem;
+                    width: 20rem;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    transition: filter 0.2s ease-in-out;
+        
+                    &:hover{
+                        filter: brightness(1.1);
+                    }
                 }
             }
+        }
 
-            button{
-                background: url('../../assets/pancake-logo.jpg');
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position: center;
-                border-radius: 0.5rem 0 0 0.5rem;
-                height: 5rem;
-                width: 20rem;
-                font-size: 1.5rem;
-                font-weight: bold;
-                transition: filter 0.2s ease-in-out;
-    
-                &:hover{
-                    filter: brightness(1.1);
-                }
+        .rightSection{
+            display: none;
+            opacity: 0.4;
+            img{
+                height: 25rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .headerSection{
+        .container{
+            .rightSection{
+                display: block;
             }
         }
     }
