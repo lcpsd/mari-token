@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../src/assets/icomoon/fonts/icomoon.eot?estz45');
+    src:  url('../src/assets/icomoon/fonts/icomoon.eot?estz45#iefix') format('embedded-opentype'),
+      url('../src/assets/icomoon/fonts/icomoon.ttf?estz45') format('truetype'),
+      url('../src/assets/icomoon/fonts/icomoon.woff?estz45') format('woff'),
+      url('../src/assets/icomoon/fonts/icomoon.svg?estz45#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-agriculture:before {
+    content: "\e900";
+  }
+  .icon-farm:before {
+    content: "\e901";
+  }
+  .icon-oil:before {
+    content: "\e902";
+  }
+  .icon-shovels:before {
+    content: "\e903";
+  }
+  
+
 :root {
     --background: #ebebeb;
     --accua-green-100: #A3F2CC;
@@ -48,7 +89,6 @@ html {
 }
 
 body {
-    background: var(--background);
     -webkit-font-smoothing: antialiased;
 }
 

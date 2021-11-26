@@ -1,3 +1,65 @@
 .subHeaderSection{
+    padding: 2rem;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#acdfce, #fff);
+
+    gap: 2rem;
+
+    .container{
+        width: 100%;
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div.cardSection{
+            position: relative;
+            > span{
+                
+                &::after{
+                    content: '';
+                    height: 1px;
+                    width: 100%;
+                    background: rgb(202, 202, 202);
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    
+        .centerImg{
+            img{
+                height: 15rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .subHeaderSection{
+        flex-direction: row;
+        height: 100vh;
+
+        .container{
+            flex-direction: row;
+
+            div.cardSection{
+                > span{
+                    &::after{
+                        width: 90%;
+                        left: 0;
+                        right: 0;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+
+    }
 }
