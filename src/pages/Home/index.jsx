@@ -4,6 +4,7 @@ import { SubHeaderSection } from '../../components/SubHeaderSection';
 import { TokenomicsSection } from '../../components/TokenomicsSection';
 import { Footer } from '../../components/Footer';
 import { RoadmapSection } from '../../components/RoadmapSection';
+import { NumbersBannerSection } from '../../components/NumbersBannerSection';
 
 export function Home(){
 
@@ -13,6 +14,7 @@ export function Home(){
             <SubHeaderSection/>
             <TokenomicsSection/>
             <RoadmapSection/>
+            <NumbersBannerSection/>
             <Footer/>
         </main>
     )
