@@ -1,5 +1,4 @@
 import { Card } from './Card'
-import farmIcon from '@assets/farm.svg'
 import logo from '@assets/logo.png'
 import styles from './styles.module.scss'
 

@@ -1,0 +1,56 @@
+.tokenomicsCard{
+
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: 0.5rem;
+
+    p{
+        text-align: center;
+    }
+
+    svg{
+        font-size: 7rem;
+    }
+
+    &.green{
+        background: linear-gradient(var(--dark-accua-green), #00b377);
+    }
+
+    &.brown{
+        background: linear-gradient(var(--brown-100), #91803b);
+    }
+}
+
+@media(min-width: 768px){
+    .tokenomicsCard{
+        display: flex;
+        flex-direction: column !important;
+        flex: 1;
+
+        transition: transform 0.2s ease-in-out;
+
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        &.green{
+            &:hover{
+                border: 2px solid #00b377;
+            }
+        }
+
+        &.brown{
+            &:hover{
+                border: 2px solid #91803b;
+            }
+        }
+    }
+}
