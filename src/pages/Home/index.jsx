@@ -5,6 +5,7 @@ import { TokenomicsSection } from '../../components/TokenomicsSection';
 import { Footer } from '../../components/Footer';
 import { RoadmapSection } from '../../components/RoadmapSection';
 import { NumbersBannerSection } from '../../components/NumbersBannerSection';
+import { FAQSection } from '../../components/FAQSection';
 
 export function Home(){
 
@@ -15,6 +16,7 @@ export function Home(){
             <TokenomicsSection/>
             <RoadmapSection/>
             <NumbersBannerSection/>
+            <FAQSection/>
             <Footer/>
         </main>
     )
