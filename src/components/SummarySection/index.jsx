@@ -2,10 +2,10 @@ import { Card } from './Card'
 import logo from '@assets/logo.png'
 import styles from './styles.module.scss'
 
-export function SubHeaderSection(){
+export function SummarySection(){
 
     return(
-        <section className={styles.subHeaderSection}>
+        <section className={styles.summarySection}>
 
             <div className={styles.container}>
                 <div className={styles.cardSection}>

@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 export function NumbersBannerSection(){
 
     return(
-        <section className={styles.section}>
+        <section className={styles.section} id="numbersSection">
             
             <div className={styles.background1}></div>
 

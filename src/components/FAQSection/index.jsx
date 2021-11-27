@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export function FAQSection(){
 
     return(
-        <section className={styles.section}>
+        <section className={styles.section} id="faqSection">
             <div className={styles.container}>
                 <h1>Frequently Asked Questions</h1>
 

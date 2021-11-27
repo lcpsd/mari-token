@@ -27,7 +27,7 @@ export function RoadmapSection(){
     ]
 
     return(
-        <section className={styles.section}>
+        <section className={styles.section} id="roadmapSection">
             <div className={styles.container}>
                 <h1>Roadmap 2021</h1>
                 
