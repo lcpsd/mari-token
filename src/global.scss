@@ -72,13 +72,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--gray-blue-800);
-    border-radius: 10px;
+    background: #5c5126;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gray-blue-800);
+    background: #49411f;
 }
 
 html {

@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import { HeaderSection } from "../../components/HeaderSection";
 import { SubHeaderSection } from '../../components/SubHeaderSection';
 import { Tokenomics } from '../../components/Tokenomics';
+import { Footer } from '../../components/Footer';
 
 export function Home(){
 
@@ -10,6 +11,7 @@ export function Home(){
             <HeaderSection/>
             <SubHeaderSection/>
             <Tokenomics/>
+            <Footer/>
         </main>
     )
 }
