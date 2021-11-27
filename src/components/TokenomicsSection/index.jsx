@@ -8,7 +8,7 @@ import {BsFillShieldLockFill} from 'react-icons/bs'
 export function TokenomicsSection(){
 
     return(
-        <section className={styles.section}>
+        <section className={styles.section} id="tokenomicsSection">
             <div className={styles.container}>
                 <h1>Tokenomics</h1>
                 <div>

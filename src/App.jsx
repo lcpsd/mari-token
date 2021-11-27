@@ -1,5 +1,6 @@
 import { Header } from './components/Header';
 import { Home } from './pages/Home';
+import { Footer } from './components/Footer';
 import logo from '@assets/logo.png'
 import './global.scss'
 
@@ -20,24 +21,12 @@ function App() {
           link: "#roadmapSection"
         },
         {
-          text: "HOW IT WORKS",
-          link: "#howWorksSection"
-        },
-        {
-          text: "WHITE PAPER",
-          link: "#homeSection"
-        },
-        {
-          text: "THE CHART",
-          link: "#homeSection"
-        },
-        {
           text: "OUR TEAM",
           link: "#ourTeamSection"
         },
         {
-          text: "FAQ",
-          link: "#faqSection"
+          text: "WHITE PAPER",
+          link: "/"
         },
         {
           text: "BLOG",
@@ -45,6 +34,7 @@ function App() {
         },
       ]}/>
       <Home/>
+      <Footer/>
     </>
   );
 }
