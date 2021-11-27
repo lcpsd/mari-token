@@ -5,7 +5,7 @@ import {IoMdBonfire} from 'react-icons/io'
 import {HiSpeakerphone} from 'react-icons/hi'
 import {BsFillShieldLockFill} from 'react-icons/bs'
 
-export function Tokenomics(){
+export function TokenomicsSection(){
 
     return(
         <section className={styles.section}>

@@ -1,0 +1,36 @@
+.roadmapCard{
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+
+    background: linear-gradient(#5c5126, #776931);
+
+    border: 2px solid #776931;
+
+    h2{
+        color: #00D48C;
+        font-size: 2.5rem;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        color: #00D48C;
+        div{
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .roadmapCard{
+        width: 100%;
+    }
+}
