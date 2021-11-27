@@ -21,24 +21,26 @@ export function Header({logo, menuItems}: HeaderProps){
     return(
         <>
             <nav className={styles.navbar}>
-                <div>
+                <div className={styles.container}>
                     <a href="#homeSection">
                         <img src={logo} alt="" />
                     </a>
-                    <ul className={!isMenuVisible ? styles.hidden : ''}>
-                        {
-                            menuItems.map((item: MenuItem) => (
-                                <li key={item.text}>
-                                    <a href={item.link}>
-                                        {item.text}
-                                    </a>
-                                </li>
-                            ))
-                        }
-                        <AiOutlineClose 
-                        onClick={() => setMenuVisibility(false)}
-                        className={styles.closeIcon} color="#fff"
-                        />
+                    <ul>
+                        <div className={!isMenuVisible ? styles.hidden : ''}>
+                            {
+                                menuItems.map((item: MenuItem) => (
+                                    <li key={item.text}>
+                                        <a href={item.link}>
+                                            {item.text}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                            <AiOutlineClose 
+                            onClick={() => setMenuVisibility(false)}
+                            className={styles.closeIcon} color="#fff"
+                            />
+                        </div>
                     </ul>
                     <FiMenu onClick={() => setMenuVisibility(true)} />
                 </div>

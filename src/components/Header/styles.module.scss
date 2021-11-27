@@ -6,113 +6,99 @@
     display: flex;
     justify-content: center;
     
-    div{
+    .container{
+        width: 100%;
+        max-width: 1120px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
         
         a{
             img{
                 height: 4rem;
             }
         }
-
+        
         ul{
-            position: absolute;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            gap: 2rem;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: 100vw;
-            background: var(--accua-green-100);
-            visibility: visible;
-            opacity: 1;
-            transition: 0.2s ease-in-out;
-
-            &.hidden{
-                top: -200px;
-                transition: 0.2s ease-in-out;
-                opacity: 0;
-                visibility: hidden;
-            }
-            
-            svg.closeIcon{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                height: 3rem;
-                width: 3rem;
-            }
-            
-            li{
+            div{
                 list-style: none;
-                color: #fff;
-                font-weight: 600;
-                font-size: 2rem;
-                transition: filter 0.2s ease-in-out;
+                height: 100vh;
+                width: 100vw;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #81bda0;
+                z-index: 10;
 
-                &:hover{
-                    filter: brightness(0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                transition: opacity 0.2s ease-in-out;
+                opacity: 1;
+                visibility: visible;
+
+                li{
+                    color: white;
+                    font-size: 2rem;
+                }
+
+                svg{
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    font-size: 3rem;
+                }
+
+                &.hidden{
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }
 
-        svg{
+        >svg{
+            color: white;
+            height: 100%;
             font-size: 3rem;
-            color: #fff;
         }
-
     }
 }
 
 @media(min-width: 768px){
     .navbar{
-        position: sticky;
-        div{
-            width: 100%;
-            max-width: 1120px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            a{
-                img{
-                    height: 4rem;
-                }
-            }
-    
+        .container{
+            padding: 0 1rem;
             ul{
-                
                 display: flex;
-                flex-direction: row;
-                gap: 1rem;
-                position: inherit;
-                
-                visibility: visible;
-                opacity: 1;
-                height: auto;
-                padding: 1rem 2rem;
+                align-items: center;
+                div{
+                    height: auto;
+                    width: auto;
+                    position:unset;
+                    background: transparent;
+                    flex-direction: row;
 
-                &.hidden{
-                    top: 0;
-                    opacity: 1;
-                    visibility: visible;
-                }
-                
-                li{
-                    list-style: none;
-                    font-weight: 600;
-                    font-size: 1rem;
+                    li{
+                        font-size: 1rem;
+                        transition: color 0.2s ease-in-out;
+                        &:hover{
+                            color: var(--gray-blue-800);
+                        }
+                    }
+
+                    &.hidden{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    svg{
+                        visibility: hidden;
+                    }
                 }
             }
-    
-            svg{
+
+            >svg{
                 display: none;
             }
         }
