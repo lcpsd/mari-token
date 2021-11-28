@@ -15,7 +15,6 @@
     "web-vitals": "^1.0.1"
   },
   
-  "homepage": "https://lcpsd.github.io/mari-token/",
   "scripts": {
     "start": "craco start",
     "build": "craco build",
