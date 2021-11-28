@@ -3,10 +3,11 @@ import { Home } from './pages/Home';
 import { Footer } from './components/Footer';
 import logo from '@assets/logo.png'
 import './global.scss'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header logo={logo} menuItems={[
         {
           text: "HOME",
@@ -37,9 +38,11 @@ function App() {
           link: "#"
         },
       ]}/>
-      <Home/>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+      </Routes>
       <Footer/>
-    </>
+    </Router>
   );
 }
 
