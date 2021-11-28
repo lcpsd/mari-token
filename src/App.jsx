@@ -13,6 +13,10 @@ function App() {
           link: "#homeSection"
         },
         {
+          text: "SUMMARY",
+          link: "#summarySection"
+        },
+        {
           text: "TOKENOMICS",
           link: "#tokenomicsSection"
         },

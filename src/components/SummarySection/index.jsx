@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 export function SummarySection(){
 
     return(
-        <section className={styles.summarySection}>
+        <section className={styles.summarySection} id="summarySection">
 
             <div className={styles.container}>
                 <div className={styles.cardSection}>
