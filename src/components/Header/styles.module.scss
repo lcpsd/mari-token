@@ -41,6 +41,7 @@
                 li{
                     color: white;
                     font-size: 2rem;
+                    position: relative;
                 }
 
                 svg{
@@ -82,8 +83,24 @@
                     li{
                         font-size: 1rem;
                         transition: color 0.2s ease-in-out;
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            height: 2px;
+                            width: 0px;
+                            background: var(--dark-accua-green);
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                            transition: width 0.2s ease-in-out;
+                        }
+
                         &:hover{
-                            color: var(--gray-blue-800);
+                            color: var(--dark-accua-green);
+                            &::after{
+                                width: 100%;
+                            }
                         }
                     }
 
