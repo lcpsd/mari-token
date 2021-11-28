@@ -16,9 +16,9 @@
   },
   
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "yarn craco start",
+    "build": "yarn craco build",
+    "test": "yarn craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
