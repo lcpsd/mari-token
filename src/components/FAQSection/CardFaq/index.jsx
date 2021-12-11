@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './styles.module.scss'
 
-export function CardFaq({title, info}){
+export function CardFaq({title, info, extra1="", extra2=""}){
 
     const [isQuestionOpened, setQuestionOpen] = useState(false)
 
@@ -15,6 +15,12 @@ export function CardFaq({title, info}){
             <p className={isQuestionOpened && styles.open}>
                 <div>
                     {info}
+                    <br />
+                    <br />
+                    {extra1}
+                    <br />
+                    <br />
+                    {extra2}
                 </div>
             </p>
         </div>

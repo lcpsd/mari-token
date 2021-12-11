@@ -8,13 +8,24 @@ export function FAQSection(){
             <div className={styles.container}>
                 <h1>Frequently Asked Questions</h1>
 
-                <CardFaq title="Question 1" info="orem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis sapien mauris, vel dictum magna consectetur sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fermentum purus id mi lobortis laoreet. Fusce ac quam euismod, cursus quam non, maximus velit"/>
+                <CardFaq title="¿Qué es Abis Lab?" 
+                info="Es un juego impulsado por el Mariverso, el cual tiene como finalidad crear tus propios
+                productos de cannabis y obtener beneficios con ellos, el PVE sera la granja donde se
+                realice todo el proceso de creacion y PVP batallas al estilo de Overcooked."
+                
+                extra1="Los propietarios de los Laboratorios NFT son recompensados por los
+                duelos que organizan."
 
-                <CardFaq title="Question 2" info="orem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis sapien mauris, vel dictum magna consectetur sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fermentum purus id mi lobortis laoreet. Fusce ac quam euismod, cursus quam non, maximus velit"/>
+                extra2="
+                Cuando termina un partido, el token de moneda del juego, se divide entre
+                el equipo ganador y el propietario del Laboratorio."/>
 
-                <CardFaq title="Question 3" info="orem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis sapien mauris, vel dictum magna consectetur sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fermentum purus id mi lobortis laoreet. Fusce ac quam euismod, cursus quam non, maximus velit"/>
+                <CardFaq title="¿como compro el token MARI?" info="En las ICOs que se realizaran en las fechas indicadas y luego de ello en pancakeswap"/>
 
-                <CardFaq title="Question 4" info="orem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis sapien mauris, vel dictum magna consectetur sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras fermentum purus id mi lobortis laoreet. Fusce ac quam euismod, cursus quam non, maximus velit"/>
+                <CardFaq title="¿Cómo compro un Laboratorio NFT?" info="En el marketplace que se implentara pronto a la interfaz de la plataforma."/>
+
+                <CardFaq title="¿Cómo compro un Productor quimico NFT?" info="Del mismo modo que los Laboratorios en el marketplace, donde luego se podran vender y
+                comprar entre los usuarios"/>
             </div>
         </section>
     )

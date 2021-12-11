@@ -8,10 +8,9 @@ export function HeaderSection(){
 
                 <div className={styles.container}>
                     <div className={styles.leftSection}>
-                        <h1>Community Owned <br />
-                            Liquidity Locked</h1>
+                        <h1>MARI ES UN ECOSISTEMA QUE SE RETROALIMENTA</h1>
                         <p>
-                            Mari Token is a Frictionless, Yield Generating, Community Owned Token.
+                        de los diversos productos y beneficios que ofrece.
                         </p>
 
                         <a href="/">

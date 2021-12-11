@@ -6,23 +6,33 @@ export function RoadmapSection(){
     const roadmap = [
         {
             id:1,
-            title: "Q1",
-            tasks: ["Task01", "Task02", "Task03"]
+            title: "DECEMBER",
+            tasks: ["IDO Private white list", "IDO Publica"]
         },
         {
             id:2,
-            title: "Q2",
-            tasks: ["Task01", "Task02", "Task03"]
+            title: "Q1 2022",
+            tasks: ["presentacion NFT /white list",
+            "1ra venta NFT Laboratory (land)", 
+            "2da venta personajes quimicos productores",
+            "Marketplace NFT launch for everywhere",
+            "Marketplace NFT launch for everywhere"
+        ]
         },
         {
             id:3,
-            title: "Q3",
-            tasks: ["Task01", "Task02", "Task03"]
+            title: "Q2 2022",
+            tasks: ["Launch Pve Abis Lab", 
+            "Launch Pve Abis Lab", 
+            "Trailer PVP",
+            "Marishop launch advertising in strategic points of the world",
+
+        ]
         },
         {
             id:4,
-            title: "Q4",
-            tasks: ["Task01", "Task02", "Task03"]
+            title: "Mid Q2",
+            tasks: ["Launch PVP Game"]
         },
     ]
 
