@@ -6,12 +6,12 @@ export function RoadmapCard({obj}){
     const tasks = obj.tasks
 
     return(
-        <div className={styles.roadmapCard} key={obj.id}>
+        <div key={obj.id} className={styles.roadmapCard}>
             <h2>{obj.title}</h2>
 
             {
                 tasks.map(task => (
-                    <div>
+                    <div key={obj.id + 1}>
                         <FaCaretRight/>
                         <div>{task}</div>
                     </div>

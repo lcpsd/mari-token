@@ -10,7 +10,7 @@ export function NumbersBannerSection(){
                 <div className={styles.info}>
                     <div>
                         <h2>8300</h2>
-                        <p>Mari Holders</p>
+                        <p>Inversores Mari</p>
                     </div>
                     <div>
                         <h2>$27K</h2>
@@ -18,11 +18,11 @@ export function NumbersBannerSection(){
                     </div>
                     <div>
                         <h2>$140K</h2>
-                        <p>Token Marketcap</p>
+                        <p>capitalización</p>
                     </div>
                     <div>
                         <h2>100000000</h2>
-                        <p>Circulating Supply</p>
+                        <p>Suministro Circulante</p>
                     </div>
                 </div>
         </section>

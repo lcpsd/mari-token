@@ -12,8 +12,8 @@ export function CardFaq({title, info, extra1="", extra2=""}){
     return(
         <div className={styles.cardFaq}>
             <h2 onClick={() => toggleMenuOpen()}>{title}</h2>
-            <p className={isQuestionOpened && styles.open}>
-                <div>
+            <p className={isQuestionOpened ? styles.open : ""}>
+                <span>
                     {info}
                     <br />
                     <br />
@@ -21,7 +21,7 @@ export function CardFaq({title, info, extra1="", extra2=""}){
                     <br />
                     <br />
                     {extra2}
-                </div>
+                </span>
             </p>
         </div>
     )

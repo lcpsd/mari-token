@@ -44,7 +44,7 @@ export function RoadmapSection(){
                 <div>
                     {
                         roadmap.map(item => (
-                            <RoadmapCard obj={item}/>
+                            <RoadmapCard key={item.id} obj={item}/>
                         ))
                     }
                 </div>

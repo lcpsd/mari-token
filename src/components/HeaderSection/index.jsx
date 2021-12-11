@@ -16,7 +16,7 @@ export function HeaderSection(){
                         <a href="/">
                             <div>
                                 <button></button>
-                                    <h3>BUY NOW</h3>
+                                    <h3>COMPRAR</h3>
                             </div>
                         </a>
                     </div>

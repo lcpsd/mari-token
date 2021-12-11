@@ -22,7 +22,8 @@ export function Header({logo, menuItems}: HeaderProps){
         <>
             <nav className={styles.navbar}>
                 <div className={styles.container}>
-                    <a href="#homeSection">
+                    <a href="#homeSection" 
+                    onClick={() => setMenuVisibility(false)}>
                         <img src={logo} alt="" />
                     </a>
                     <ul>

@@ -9,26 +9,26 @@ function App() {
   return (
     <Router>
       <Header logo={logo} menuItems={[
+        // {
+        //   text: "INICIO",
+        //   link: "#homeSection"
+        // },
         {
-          text: "HOME",
-          link: "#homeSection"
-        },
-        {
-          text: "SUMMARY",
+          text: "RESUMEN",
           link: "#summarySection"
         },
-        {
-          text: "TOKENOMICS",
-          link: "#tokenomicsSection"
-        },
+        // {
+        //   text: "TOKENOMICS",
+        //   link: "#tokenomicsSection"
+        // },
         {
           text: "ROADMAP",
           link: "#roadmapSection"
         },
-        {
-          text: "OUR TEAM",
-          link: "#ourTeamSection"
-        },
+        // {
+        //   text: "OUR TEAM",
+        //   link: "#ourTeamSection"
+        // },
         {
           text: "WHITE PAPER",
           link: "/"
